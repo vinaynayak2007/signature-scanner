@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "tool": "signature-scanner",
+    "target": "/home/user/signature-scanner/examples/demo-samples",
+    "scanned_at": "2026-09-18T05:40:36+00:00",
+    "elapsed_seconds": 0.02
+  },
+  "summary": {
+    "total": 6,
+    "malicious": 0,
+    "likely_malicious": 1,
+    "suspicious": 2,
+    "low_risk": 1,
+    "clean": 2,
+    "error": 0,
+    "total_bytes": 151039,
+    "total_size_human": "147.5 KB",
+    "flagged": 3
+  },
+  "results": [
+    {
+      "path": "examples/demo-samples/clean/notes.txt",
+      "size": 50,
+      "size_human": "50 B",
+      "hashes": {
+        "md5": "4e2179b6e5800c2fb46d16a2bdf78e93",
+        "sha1": "516d85577877278f3487fcaf85988c96317b59f7",
+        "sha256": "2235f48f480805d2ed221e099a4e837bd9a6e2d7a7e2416557335cf94730ea22"
+      },
+      "verdict": "clean",
+      "score": 0,
+      "findings": [],
+      "error": null
+    },
+    {
+      "path": "examples/demo-samples/clean/settings.ini",
+      "size": 12,
+      "size_human": "12 B",
+      "hashes": {
+        "md5": "914a118683c9850e2d51e9f084c09594",
+        "sha1": "016f535004747659520995dd1f68e3177bc7bf3a",
+        "sha256": "b66ba1437c1f5e4f7c264fe8fe958a138696a8bb594b09319145991a6a1f3df2"
+      },
+      "verdict": "clean",
+      "score": 0,
+      "findings": [],
+      "error": null
+    },
+    {
+      "path": "examples/demo-samples/suspicious/packed.bin",
+      "size": 150000,
+      "size_human": "146.5 KB",
+      "hashes": {
+        "md5": "2f36db2c2b25340d89fe168954789cff",
+        "sha1": "b8050cf4117e96b60240ddaa8092a8ce6e3a808b",
+        "sha256": "a0349b0a39bee434da54188bce59811f47dccb297a11d059379f29332c6b42b9"
+      },
+      "verdict": "low_risk",
+      "score": 30,
+      "findings": [
+        {
+          "kind": "heuristic",
+          "rule": "high_entropy",
+          "score": 30,
+          "detail": "entropy 8.00/8.00 \u2014 packed, encrypted or compressed"
+        }
+      ],
+      "error": null
+    },
+    {
+      "path": "examples/demo-samples/suspicious/injector.exe",
+      "size": 452,
+      "size_human": "452 B",
+      "hashes": {
+        "md5": "f0730df2a0daffcadbfd21c6b237ddf7",
+        "sha1": "3c198c2e4868fc499df6bc6b51a5cb1366699500",
+        "sha256": "bfb10463b39e75965471d848ec45e26b24913ea5b0cff77d336d1298fc4cb414"
+      },
+      "verdict": "suspicious",
+      "score": 65,
+      "findings": [
+        {
+          "kind": "heuristic",
+          "rule": "suspicious_strings:process_injection",
+          "score": 35,
+          "detail": "found VirtualAllocEx, WriteProcessMemory, CreateRemoteThread"
+        },
+        {
+          "kind": "heuristic",
+          "rule": "tiny_executable",
+          "score": 30,
+          "detail": "PE file of only 452 bytes \u2014 likely a stub"
+        }
+      ],
+      "error": null
+    },
+    {
+      "path": "examples/demo-samples/suspicious/run.ps1",
+      "size": 123,
+      "size_human": "123 B",
+      "hashes": {
+        "md5": "7a4f688935ff4f8163e3693e5491b52f",
+        "sha1": "b25130b7df44abcae198756b100eb9133a3607e9",
+        "sha256": "1481fed4c69befe82e41f877e342a3aa4dc39c4b45d66a3fc60439599755ec17"
+      },
+      "verdict": "suspicious",
+      "score": 68,
+      "findings": [
+        {
+          "kind": "heuristic",
+          "rule": "suspicious_strings:shell_execution",
+          "score": 28,
+          "detail": "found powershell -enc, powershell -EncodedCommand"
+        },
+        {
+          "kind": "heuristic",
+          "rule": "obfuscation",
+          "score": 40,
+          "detail": "base64-encoded command"
+        }
+      ],
+      "error": null
+    },
+    {
+      "path": "examples/demo-samples/suspicious/invoice_2026.pdf.exe",
+      "size": 402,
+      "size_human": "402 B",
+      "hashes": {
+        "md5": "c88cc667e1114d20601b1f1fd54b862c",
+        "sha1": "3b74aeacdd7383166d46795421bb7de9d201f6df",
+        "sha256": "4fa996fa1b1fa5e012104ad45dc2518980185eecadb836e3d8051b75b05a7f64"
+      },
+      "verdict": "likely_malicious",
+      "score": 120,
+      "findings": [
+        {
+          "kind": "heuristic",
+          "rule": "double_extension",
+          "score": 45,
+          "detail": "'.pdf' + '.exe' \u2014 appears to be a decoy"
+        },
+        {
+          "kind": "heuristic",
+          "rule": "suspicious_filename",
+          "score": 45,
+          "detail": "double extension"
+        },
+        {
+          "kind": "heuristic",
+          "rule": "tiny_executable",
+          "score": 30,
+          "detail": "PE file of only 402 bytes \u2014 likely a stub"
+        }
+      ],
+      "error": null
+    }
+  ]
+}
