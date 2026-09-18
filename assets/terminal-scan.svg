@@ -1,0 +1,70 @@
+<svg width="627" height="1281" viewBox="0 0 627 1281" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#161b22"/><stop offset="100%" stop-color="#0d1117"/>
+</linearGradient></defs>
+<rect width="627" height="1281" rx="10" fill="url(#bg)" stroke="#30363d"/>
+<rect width="627" height="38" rx="10" fill="#21262d"/>
+<rect y="28" width="627" height="10" fill="#21262d"/>
+<line x1="0" y1="38" x2="627" y2="38" stroke="#30363d"/>
+<circle cx="20" cy="19" r="6" fill="#ff5f57"/>
+<circle cx="40" cy="19" r="6" fill="#febc2e"/>
+<circle cx="60" cy="19" r="6" fill="#28c840"/>
+<text x="313.5" y="24" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#8b949e">python cli.py scan ./examples/demo-samples</text>
+<text x="22" y="62" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="83" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#0ea5e9">  ┌─────────────────────────────────────────────────────────┐</text>
+<text x="22" y="104" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#0ea5e9">  │  signature-scanner                                      │</text>
+<text x="22" y="125" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#0ea5e9">  │  signature + heuristic file scanner  ·  v1.0.0          │</text>
+<text x="22" y="146" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#0ea5e9">  └─────────────────────────────────────────────────────────┘</text>
+<text x="22" y="167" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="188" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  target   /home/user/signature-scanner/examples/demo-samples</text>
+<text x="22" y="209" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  database /home/user/signature-scanner/scanner/signatures.json</text>
+<text x="22" y="230" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  mode     recursive</text>
+<text x="22" y="251" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="272" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="293" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">──────────────────────────────────────────────────────────────────</text>
+<text x="22" y="314" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  SIGNATURE SCANNER  ·  scan report</text>
+<text x="22" y="335" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">──────────────────────────────────────────────────────────────────</text>
+<text x="22" y="356" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  Target   /home/user/signature-scanner/examples/demo-samples</text>
+<text x="22" y="377" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  Files    6 scanned, 147.5 KB</text>
+<text x="22" y="398" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  Time     0.02s</text>
+<text x="22" y="419" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="440" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">──────────────────────────────────────────────────────────────────</text>
+<text x="22" y="461" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  RESULTS</text>
+<text x="22" y="482" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">──────────────────────────────────────────────────────────────────</text>
+<text x="22" y="503" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#f85149">  ✖    1  likely_malicious</text>
+<text x="22" y="524" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  !    2  suspicious</text>
+<text x="22" y="545" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#58a6ff">  ·    1  low_risk</text>
+<text x="22" y="566" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#3fb950">  ✓    2  clean</text>
+<text x="22" y="587" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="608" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">──────────────────────────────────────────────────────────────────</text>
+<text x="22" y="629" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  DETECTIONS</text>
+<text x="22" y="650" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">──────────────────────────────────────────────────────────────────</text>
+<text x="22" y="671" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="692" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  ! examples/demo-samples/suspicious/injector.exe</text>
+<text x="22" y="713" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#d29922">     SUSPICIOUS · score 65 · 452 B</text>
+<text x="22" y="734" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#d29922">       + suspicious_strings:process_injection (+35)</text>
+<text x="22" y="755" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">         found VirtualAllocEx, WriteProcessMemory, CreateRemoteThread</text>
+<text x="22" y="776" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#d29922">       + tiny_executable (+30)</text>
+<text x="22" y="797" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">         PE file of only 452 bytes — likely a stub</text>
+<text x="22" y="818" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="839" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  ! examples/demo-samples/suspicious/run.ps1</text>
+<text x="22" y="860" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#d29922">     SUSPICIOUS · score 68 · 123 B</text>
+<text x="22" y="881" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#d29922">       + suspicious_strings:shell_execution (+28)</text>
+<text x="22" y="902" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">         found powershell -enc, powershell -EncodedCommand</text>
+<text x="22" y="923" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#d29922">       + obfuscation (+40)</text>
+<text x="22" y="944" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">         base64-encoded command</text>
+<text x="22" y="965" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="986" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#f85149">  ✖ examples/demo-samples/suspicious/invoice_2026.pdf.exe</text>
+<text x="22" y="1007" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#f0883e">     LIKELY_MALICIOUS · score 120 · 402 B</text>
+<text x="22" y="1028" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#d29922">       + double_extension (+45)</text>
+<text x="22" y="1049" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">         &#x27;.pdf&#x27; + &#x27;.exe&#x27; — appears to be a decoy</text>
+<text x="22" y="1070" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#d29922">       + suspicious_filename (+45)</text>
+<text x="22" y="1091" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">         double extension</text>
+<text x="22" y="1112" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#d29922">       + tiny_executable (+30)</text>
+<text x="22" y="1133" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">         PE file of only 402 bytes — likely a stub</text>
+<text x="22" y="1154" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="1175" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">  3 file(s) require attention.</text>
+<text x="22" y="1196" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9">──────────────────────────────────────────────────────────────────</text>
+<text x="22" y="1217" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+<text x="22" y="1238" xml:space="preserve" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13.5" fill="#c9d1d9"></text>
+</svg>
