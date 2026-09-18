@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan report — demo-samples</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; padding:32px 16px; background:#0d1117; color:#c9d1d9;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.55; }
+  .wrap { max-width:960px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 4px; color:#e6edf3; }
+  .sub { color:#8b949e; font-size:13.5px; margin-bottom:24px; }
+  .cards { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:28px; }
+  .card { flex:1 1 120px; background:#161b22; border:1px solid #30363d;
+    border-radius:8px; padding:14px 16px; }
+  .card b { display:block; font-size:26px; line-height:1.2; }
+  .card span { color:#8b949e; font-size:12px; text-transform:uppercase;
+    letter-spacing:.6px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th,td { text-align:left; padding:10px 12px; border-bottom:1px solid #21262d;
+    vertical-align:top; }
+  th { color:#8b949e; font-size:12px; text-transform:uppercase;
+    letter-spacing:.6px; border-bottom:1px solid #30363d; }
+  .v { font-weight:600; white-space:nowrap; }
+  .path { font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:13px; word-break:break-all; }
+  .findings { margin-top:6px; }
+  .finding { font-size:13px; color:#8b949e; margin-top:3px; }
+  .tag { display:inline-block; font-size:10.5px; font-weight:700;
+    padding:1px 6px; border-radius:4px; margin-right:6px;
+    background:#21262d; color:#8b949e; }
+  .tag.sig { background:#f8514920; color:#f85149; }
+  .hash { font-family:ui-monospace,monospace; font-size:12px; color:#6e7681; }
+  .clean { background:#0d1117; }
+  footer { margin-top:36px; padding-top:16px; border-top:1px solid #21262d;
+    color:#6e7681; font-size:12.5px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Signature Scanner — Scan Report</h1>
+  <div class="sub">
+    Target <strong>demo-samples</strong> · 2026-09-18 05:40:36 UTC · completed in 0.02s
+  </div>
+
+  <div class="cards"><div class="card"><b style="color:#f85149">0</b><span>Malicious</span></div><div class="card"><b style="color:#f0883e">1</b><span>Likely</span></div><div class="card"><b style="color:#d29922">2</b><span>Suspicious</span></div><div class="card"><b style="color:#3fb950">2</b><span>Clean</span></div><div class="card"><b style="color:#c9d1d9">6</b><span>Scanned</span></div></div>
+
+  <table>
+    <thead>
+      <tr><th>File</th><th>Size</th><th>Verdict</th><th>Score</th></tr>
+    </thead>
+    <tbody><tr><td><div class="path">examples/demo-samples/suspicious/invoice_2026.pdf.exe</div><div class="hash">sha256 4fa996fa1b1fa5e012104ad45dc2518980185eecadb836e3d8051b75b05a7f64</div><div class="findings"><div class="finding"><span class="tag">HEURISTIC</span>double_extension (+45) — &#x27;.pdf&#x27; + &#x27;.exe&#x27; — appears to be a decoy</div><div class="finding"><span class="tag">HEURISTIC</span>suspicious_filename (+45) — double extension</div><div class="finding"><span class="tag">HEURISTIC</span>tiny_executable (+30) — PE file of only 402 bytes — likely a stub</div></div></td><td>402 B</td><td class="v" style="color:#f0883e">LIKELY MALICIOUS</td><td>120</td></tr><tr><td><div class="path">examples/demo-samples/suspicious/run.ps1</div><div class="hash">sha256 1481fed4c69befe82e41f877e342a3aa4dc39c4b45d66a3fc60439599755ec17</div><div class="findings"><div class="finding"><span class="tag">HEURISTIC</span>suspicious_strings:shell_execution (+28) — found powershell -enc, powershell -EncodedCommand</div><div class="finding"><span class="tag">HEURISTIC</span>obfuscation (+40) — base64-encoded command</div></div></td><td>123 B</td><td class="v" style="color:#d29922">SUSPICIOUS</td><td>68</td></tr><tr><td><div class="path">examples/demo-samples/suspicious/injector.exe</div><div class="hash">sha256 bfb10463b39e75965471d848ec45e26b24913ea5b0cff77d336d1298fc4cb414</div><div class="findings"><div class="finding"><span class="tag">HEURISTIC</span>suspicious_strings:process_injection (+35) — found VirtualAllocEx, WriteProcessMemory, CreateRemoteThread</div><div class="finding"><span class="tag">HEURISTIC</span>tiny_executable (+30) — PE file of only 452 bytes — likely a stub</div></div></td><td>452 B</td><td class="v" style="color:#d29922">SUSPICIOUS</td><td>65</td></tr><tr><td><div class="path">examples/demo-samples/suspicious/packed.bin</div><div class="hash">sha256 a0349b0a39bee434da54188bce59811f47dccb297a11d059379f29332c6b42b9</div><div class="findings"><div class="finding"><span class="tag">HEURISTIC</span>high_entropy (+30) — entropy 8.00/8.00 — packed, encrypted or compressed</div></div></td><td>146.5 KB</td><td class="v" style="color:#58a6ff">LOW RISK</td><td>30</td></tr><tr class="clean"><td><div class="path">examples/demo-samples/clean/notes.txt</div><div class="findings"></div></td><td>50 B</td><td class="v" style="color:#3fb950">CLEAN</td><td>0</td></tr><tr class="clean"><td><div class="path">examples/demo-samples/clean/settings.ini</div><div class="findings"></div></td><td>12 B</td><td class="v" style="color:#3fb950">CLEAN</td><td>0</td></tr></tbody>
+  </table>
+
+  <footer>Generated by signature-scanner · authorised testing only</footer>
+</div>
+</body>
+</html>
